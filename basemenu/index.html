@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDesplegable" aria-controls="navbarDesplegable" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarDesplegable">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-target="#">Secundario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Terciario</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown">
+                <li><a class="dropdown-item" >Dropdown 1</a></li>
+                <li><a class="dropdown-item" >Dropdown 2</a></li>
+                <li><a class="dropdown-item" >Dropdown 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+    
+  <!--Navbar Lateral-->
+<div class="row">
+  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark col-sm-12 col-md-3 col-lg-2">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Sidebar</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link active" aria-current="page">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+          Products
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+          Customers
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="images/Maroto2.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>Carlos</strong>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>
+  <!--Formulario de contacto en un modal-->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="formModalLabel">Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+              <label for="nombre">Nombre</label>
+            </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="email" placeholder="Email">
+              <label for="email">Email</label>
+            </div>        
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+
+    <footer class="footer py-3 mt-auto border-top justify-content-center">
+      <div class="container">
+        <div class="row">
+          <p class="col-sm-12 col-md-4 mb-0 text-muted text-center">© 2022 Carlos Maroto Castaño</p>
+
+          <div class="col-sm-12 col-md-4 text-center">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formModal">
+              Contacto
+            </button>
+          </div>
+         
+
+          <ul class="col-sm-12 nav col-md-4 justify-content-center">
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-muted">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
