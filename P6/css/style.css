@@ -1,0 +1,122 @@
+* {box-sizing: border-box;}
+        
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+
+header {
+    display:flex; flex-flow:row wrap;
+    overflow: hidden;
+    background-color: #383838;
+    padding: 10px 10px;
+}
+
+.izq {
+    height: 90px;
+    width:33.33333%;
+    text-align:left;
+}
+
+.centro {
+    height: 90px;
+    width:33.33333%;
+    text-align:center;
+}
+
+.dcha {
+    width:33.33333%;
+    text-align:right;
+}
+
+header div img{
+
+    height: 90px;
+}
+
+header h1 {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(27, 27, 27);
+    }
+
+    li {
+    float: left;
+    }
+
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.roaster{
+    text-align: center;
+}
+
+.roaster div{
+    display: inline-block;
+}
+.roaster div img{
+    height: 90%;
+    width: 90%;
+}
+
+.dataCard{
+    opacity: 100%;
+}
+
+.dataCard:hover{
+    opacity: 70%;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+.roaster a{
+    text-decoration: none;
+}
+
+article{
+    color: white;
+}
+
+.footer{
+    height: 90px;
+    width: 100%;
+    margin: 0%;
+    position:relative;
+    background-color: #383838;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+.licencia{
+    align-items: center;
+    display: flex;
+}
+
+.license{
+    color: white;
+    margin: 0px; 
+    margin-left: 20px;
+    padding: 0px;
+}

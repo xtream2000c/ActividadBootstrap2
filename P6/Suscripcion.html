@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riders</title>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-secondary">
+
+    <!--Esta actividad es el P1 del boletin html1-->
+
+    <!--Header responsive-->
+    <header class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center" >
+                    <img src="media/LOGO.png" height="90" alt="Escudo movistar riders">
+                </div>
+                <div  class="col-md-4 text-center">
+                    <img src="media/CSGO1.png" height="90" alt="Counter-Strike:Global offensive">
+                </div>
+                <div class="col-md-4 text-center my-auto"><h1 class="text-white" >Movistar Riders</h1></div>
+            </div>
+        </div>        
+    </header>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="box-shadow: 0px 10px 10px grey;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDesplegable" aria-controls="navbarDesplegable" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarDesplegable">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Suscripcion.html">Susbribirse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+
+        <div>
+            <form action="index.html" oninput="resultado.value=parseInt(opcion.value)">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre: </label>
+                    <input class="form-control" type="text" id="nombre" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="Apellidos" class="form-label">Apellidos: </label>
+                    <input class="form-control" type="text" id="Apellidos" required>
+                </div>
+                
+
+                <div class="mb-3">
+                    <label for="DNI" class="form-label">DNI: </label>
+                    <input class="form-control" type="text" id="DNI" required>
+                </div>
+                
+                
+                <div class="mb-3">
+                    <label for="Telefono" class="form-label">Telefono: </label>
+                    <input class="form-control" id="Telefono" type="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="000-000-000">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="Direccion" class="form-label">Direccion: </label>
+                    <input class="form-control" type="text" id="Direccion" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email: </label>
+                    <input class="form-control" type="email" id="email" required>
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="Sexo" class="form-label">Sexo: </label>
+                
+                    <input class="Sexo" type="radio" name="Sexo" id="Sexo" value="H" checked>Hombre</input>
+                    <input class="Sexo" type="radio" name="Sexo" id="Sexo" value="M">Mujer</input>
+                
+                </div>
+                
+            
+                <div class="mb-3"></div>
+                <label for="Condiciones" class="form-label">Acepta las condiciones: </label>
+                <input class="Condiciones" id="Condiciones" type="checkbox" required>
+            
+                
+                <div class="mb-3">
+
+                    <h5>Categorias</h5>
+            
+                    <label for="infantil" class="form-label"> Infantil</label>
+                    <input name="opcion" type="radio" name="opcionSus" value="10" id="infantil" checked></input>
+                
+                    <label for="menor21" class="form-label"> Menor 21</label>
+                    <input name="opcion" type="radio" name="opcionSus" value="15" id="menor21"></input>
+                
+                    <label for="Adulto" class="form-label"> Adulto</label>
+                    <input name="opcion" type="radio" name="opcionSus" value="25" id="adulto"></input>
+                
+
+                </div>
+                                
+                    <h5>Precio = <output name="resultado">10</output></h5>
+            
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+
+    </div>
+    <footer class="footer py-3 mt-auto border-top justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                    </a>
+                </div>
+                
+                <div class="col-md-9 text-center">
+                    <p>
+                        Este obra está bajo una licencia de Creative Commons 4.0 Internacional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
